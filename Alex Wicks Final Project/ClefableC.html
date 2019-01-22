@@ -1,0 +1,81 @@
+<!DOCTYPE> 
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="Right.CSS">
+<link rel="stylesheet" href="jAlert-master/src/jAlert-v3.css" />
+<script src="jquery-1.12.2.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script src="jAlert-master/src/jAlert-v3.js"></script>
+<script src="jAlert-master/src/jAlert-functions.js"></script>
+<script src="jQueryRotate.js"></script>
+</head>
+
+<body>
+
+<script>
+
+var img = new Image();
+img.src="Banner-Pokeballs.png";
+
+window.onload = function()
+{
+	var canvas = document.getElementById("drawingCanvas");
+	var context = canvas.getContext("2d");
+	
+	context.rect(0,0,800,200);
+	context.fillStyle ="#dd545a";
+	context.fill();
+	context.drawImage(img,0,0);
+	
+	context.font= "40px Sylfaen";
+	context.fillStyle = "#000000";
+	context.fillText("Guess the Cry!", 40,60); 
+ 
+	context.font= "40px Sylfaen";
+	context.fillStyle = "#c50811";
+	context.fillText("Guess the Cry!", 37,60); 
+ 
+	}
+</script>
+
+<script>
+jQuery(document).ready(function()
+{
+
+$('body').css('opacity', '0').fadeTo(250, 1,'swing'); 
+
+$("#Play").ready(function(){
+	document.getElementById("Clefable").play();
+	var $mp = $(".PokeImage");
+	
+	 /*$mp.error(function(){
+		$mp.replaceWith("<p style='text-align: center'>Sorry, seems this image is missing....<br>But let's go on!</p>");});
+	*/
+	
+	
+	$mp
+		//.css ('position','relative')
+		.fadeToggle()
+		.animate({top: "-=75px"}, "fast")
+		.animate({top: "+=75px"}, "fast", "easeOutElastic")
+		.rotate({angle: 0, duration: 500, animateTo:360})
+		.queue('fx',function() 
+		{
+			$(this).dequeue('fx');} )
+							});
+});
+ </script>
+
+<header>
+	<div id="Banner">
+	<p style="text-align:center"><canvas id="drawingCanvas" width="300" height="110"></canvas></p>
+	</div>
+</header>
+ 
+ <h1 STYLE="text-align:center">CORRECT!</h1>
+ 
+<audio id="Clefable" src="Clefable.mp3" preload="auto"></audio>
+<img src="Clefable!.png" class="PokeImage" />
+<button id="Play" onclick="location.href='LeafeonQ.html'">Next Question!</button>
+</body>
+</HTML>

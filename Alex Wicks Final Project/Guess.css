@@ -1,0 +1,112 @@
+body
+{
+	background-image: url("BG2.png");
+	background-repeat: no-repeat;
+	background-color: #e73741;
+     overflow-y: hidden;
+     overflow-x: hidden;
+}
+
+#Banner
+{
+	background-color: #dd545a;
+}
+
+P
+{
+	color: #57cc28;
+	font-family: courier;
+	font-size: 38px;
+	font-weight: bold;
+	 text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	
+}
+
+/* Answer Box 1 CSS start here */
+#Answer1
+{
+	display: block;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 9px #b81922;
+	transition-property: background-color; 
+	transition-duration: .5s;
+}
+
+#Answer1:active {
+  box-shadow: 0 5px #b81922;
+  transform: translateY(4px);
+  }
+  
+#Answer1:hover {
+	background-color: #DD545A;
+}
+/* Answer Box 1 Ends Here */
+/* Answer Box 2 Starts Here */
+
+#Answer2
+{
+	display: block;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 9px #b81922;
+	transition-property: background-color; 
+	transition-duration: .5s;
+}
+
+#Answer2:active {
+  box-shadow: 0 5px  #b81922;
+  transform: translateY(4px);
+  }
+  
+#Answer2:hover {
+	background-color: #DD545A;
+}
+/* Answer Box 2 Ends Here */
+
+/* Answer Box 3 Starts Here */
+#Answer3
+{
+	display: block;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 9px  #b81922;
+	transition-property: background-color; 
+	transition-duration: .5s;
+}
+
+#Answer3:active {
+  box-shadow: 0 5px  #b81922;
+  transform: translateY(4px);
+  }
+  
+#Answer3:hover {
+	background-color: #DD545A;
+}
+/* Answer Box 3 Ends Here */
+
+#Space
+{
+	padding: 10px;
+} 
+/* Space is just a div to make the buttons space out; padding messed up the border to create the illusion of a button push */
+

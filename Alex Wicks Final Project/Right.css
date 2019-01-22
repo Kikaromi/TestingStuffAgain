@@ -1,0 +1,106 @@
+body
+{
+	background-image: url("BG.png");
+	background-repeat: no-repeat;
+	background-color: #e73741;
+     overflow-y: hidden;
+     overflow-x: hidden;
+}
+
+
+h1
+{
+	color: #57cc28;
+	font-family: courier;
+	font-size: 38px;
+	font-weight: bold;
+	 text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+/* Image Related Stuff Below */
+img
+{	position: relative;
+	top: 35px;
+	margin: 0 auto;
+	display: block;
+}
+
+.PokeImage
+{
+	display: none;
+}
+
+
+#Banner
+{
+	background-color: #dd545a;
+}
+
+
+#mass
+{
+	top: 0px;
+}
+
+/* Next Question Button CSS Below */
+#Play
+{
+	position: fixed;
+	left: 29%;
+	top: 460px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 7px #b81922;
+	transition-property: background-color; 
+	transition-duration: .5s;
+}
+
+#Play:active
+{
+  box-shadow: 0 5px #b81922;
+  transform: translateY(4px);
+}
+
+#Play:hover
+{
+	background-color: #DD545A;
+}
+
+
+/* Special CSS for the Win Page's button */
+.Win
+{
+	position: fixed;
+	top: 480px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 7px #b81922;
+	transition-property: background-color; 
+	transition-duration: .5s;
+	left: 25%;
+}
+
+.Win:active
+{
+  box-shadow: 0 5px #b81922;
+  transform: translateY(4px);
+}
+
+.Win:hover
+{
+	background-color: #DD545A;
+}
+
+

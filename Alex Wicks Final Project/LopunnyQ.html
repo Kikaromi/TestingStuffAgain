@@ -1,0 +1,73 @@
+<!DOCTYPE> 
+<HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="Guess.CSS"/>
+<script src="jquery-1.12.2.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<link rel="stylesheet" href="jAlert-master/src/jAlert-v3.css" />
+<script src="jAlert-master/src/jAlert-v3.js"></script>
+<script src="jAlert-master/src/jAlert-functions.js"></script>
+</head>
+
+<body>
+
+<script>
+
+var img = new Image();
+img.src="Banner-Pokeballs.png";
+
+window.onload = function()
+{
+	var canvas = document.getElementById("drawingCanvas");
+	var context = canvas.getContext("2d");
+	
+	context.rect(0,0,800,200);
+	context.fillStyle ="#dd545a";
+	context.fill();
+	context.drawImage(img,0,0);
+	
+	context.font= "40px Sylfaen";
+	context.fillStyle = "#000000";
+	context.fillText("Guess the Cry!", 40,60); 
+ 
+	context.font= "40px Sylfaen";
+	context.fillStyle = "#c50811";
+	context.fillText("Guess the Cry!", 37,60); 
+ 
+	}
+</script>
+
+<script>
+jQuery(document).ready(function()
+{
+/*var audioElem = document.createElement("audio");
+audioElem.setAttribute('src', 'Lopunny.mp3');
+audioElem.autoPlay=false;
+audioElem.preLoad= true;
+*/
+
+$("#Lopunny").ready(function(){
+	document.getElementById("Lopunny").play(); })
+
+$("#Lopunny").error(function(){
+errorAlert('Audio Error!', 'The sound file is missing. To be fair, hit Lopunny for this question to continue on.');});
+	
+});
+ </script>
+
+<header>
+	<div id="Banner">
+	<p style="text-align:center"><canvas id="drawingCanvas" width="300" height="110"></canvas></p>
+	</div>
+</header>
+ 
+ <P STYLE="text-align:center">Whose cry was that?</p>
+ 
+<audio id="Lopunny" src="Lopunny.mp3" preload="auto"></audio>
+<button id="Answer1" onclick="location.href='Wrong.html';">Loudred</button>
+<div id="space"></div>
+<button id="Answer3" onclick="location.href='LopunnyC.html'">Lopunny</button>
+<div id="space"></div>
+<button id="Answer3" onclick="location.href='Wrong.html'">Lumineon</button>
+</body>
+</HTML>
